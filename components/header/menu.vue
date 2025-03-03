@@ -1,16 +1,16 @@
 <template>
     <div id="main-menu" class="wsmainfull menu clearfix" >
-        <div class="wsmainwp clearfix" style=" margin-left: 8%;">
+        <div class="wsmainwp clearfix" style=" margin-left: 6%;">
             <!-- HEADER BLACK LOGO -->
             <div class="desktoplogo ">
                 <NuxtLink to="/" class="logo-black"><img src="/assets/images/gwc-logo.webp" alt="logo" class="rounded" style="min-height: 77px; "/></NuxtLink>
             </div>
             <!-- HEADER WHITE LOGO -->
             <div class="desktoplogo">
-                <NuxtLink to="/" class="logo-white"><img src="/assets/images/gwc-logo.webp" alt="logo" class="rounded" style="min-height: 77px;" /></NuxtLink>
+                <NuxtLink to="/" class="logo-white"><img src="/assets/images/gwc-logo.webp" alt="logo" class="rounded" style="min-height: 140px; min-width: 140px; margin-top: 13%;" /></NuxtLink>
             </div>
             <!-- MAIN MENU -->
-            <nav class="wsmenu clearfix">
+            <nav class="wsmenu clearfix" >
                 <ul class="wsmenu-list nav-theme">
                     <!-- DROPDOWN SUB MENU -->
                     <li aria-haspopup="true" class="mg_link" :class="{ open: isOpen[0] }">
@@ -109,7 +109,7 @@
                                 </div>
                                 <!-- End row -->
                             </div>
-                            <!-- End container -->
+                           
                         </div>
                         <!-- End wsmegamenu -->
                     </li>
@@ -124,10 +124,12 @@
                     <!-- SIGN UP BUTTON -->
                     <li class="nl-simple" aria-haspopup="true">
                         <NuxtLink to="/signup-2" class="btn r-04 bg-primary hover--tra-white last-link">POSP Sign up</NuxtLink>
+                    
+           
                     </li>
                 </ul>
             </nav>
-            <!-- END MAIN MENU -->
+           
         </div>
     </div>
 </template>
