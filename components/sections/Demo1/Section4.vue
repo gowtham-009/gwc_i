@@ -115,6 +115,7 @@
             <!-- END FEATURES-6 WRAPPER -->
         </div>
         <!-- End container -->
+     
     </section>
-   
+    <hr class="divider divider-light" />
 </template>
