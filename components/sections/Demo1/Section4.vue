@@ -13,8 +13,8 @@
                 </div>
             </div>
             <!-- FEATURES-6 WRAPPER -->
-             <h1>hellow</h1>
-            <div class="fbox-wrapper text-center">
+         
+            <div class="fbox-wrapper text-center" >
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
                     <!-- FEATURE BOX #1 -->
                     <div class="col">
@@ -38,6 +38,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- END FEATURE BOX #1 -->
                     <!-- FEATURE BOX #2 -->
                     <div class="col">
@@ -61,6 +62,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- END FEATURE BOX #2 -->
                     <!-- FEATURE BOX #3 -->
                     <div class="col">
@@ -84,6 +86,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- END FEATURE BOX #3 -->
                     <!-- FEATURE BOX #4 -->
                     <div class="col">
@@ -107,6 +110,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- END FEATURE BOX #4 -->
                 </div>
                 <!-- End row -->
@@ -115,7 +119,5 @@
         </div>
         <!-- End container -->
     </section>
-    <!-- END FEATURES-6 -->
-    <!-- DIVIDER LINE -->
-    <hr class="divider" />
+ 
 </template>
