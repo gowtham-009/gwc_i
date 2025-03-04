@@ -49,11 +49,11 @@
                     <div id="hero-8-form" class="r-10 wow fadeInLeft">
                         <div class="btn-group me-2 w-100" role="group" aria-label="First group">
                                 <button type="button" @click="activetab('general')"
-                                    :class="{ 'border-2 bg-white border-primary text-black': activelement === 'general' }"
-                                    class="btn bg-gray text-black ">General POSP</button>
+                                    :class="{ 'bg-primcolor text-white' :activelement === 'general' }"
+                                    class="btn bg-gray">General POSP</button>
                                 <button type="button" @click="activetab('life')"
-                                    :class="{ 'border-2 bg-white border-primary text-black': activelement === 'life' }"
-                                    class="btn bg-gray text-black">Life POSP</button>
+                                   :class="{ 'bg-primcolor' :activelement === 'life' }"
+                                    class="btn bg-gray ">Life POSP</button>
 
                             </div>
                         <!-- Form -->
@@ -120,6 +120,8 @@
 
 <script setup>
 import { ref } from 'vue'
+
+
 const form1 = ref(true)
 const form2 = ref(false)
 
@@ -137,6 +139,10 @@ const activetab = (tab) => {
     }
 }
 
+
+
+
+
 </script>
 
 <style>
@@ -148,5 +154,9 @@ const activetab = (tab) => {
     color: white !important;
    
   
+}
+
+.bg-primcolor{
+background-color: #505c77 !important;
 }
 </style> 

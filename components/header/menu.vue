@@ -3,12 +3,15 @@
         <div class="wsmainwp clearfix" style=" margin-left: 6%;">
             <!-- HEADER BLACK LOGO -->
             <div class="desktoplogo ">
-                <NuxtLink to="/" class="logo-black"><img src="/assets/images/gwc-logo.webp" alt="logo" class="rounded" style="min-height: 77px; "/></NuxtLink>
+                <NuxtLink to="/" class="logo-black "><img src="/assets/images/gwc-logo.webp" class="rounded" alt="logo" style="min-height: 60px;" /></NuxtLink>
             </div>
-            <!-- HEADER WHITE LOGO -->
-            <div class="desktoplogo">
-                <NuxtLink to="/" class="logo-white"><img src="/assets/images/gwc-logo.webp" alt="logo" class="rounded" style="min-height: 140px; min-width: 140px; margin-top: 13%;" /></NuxtLink>
+          
+            <div class="desktoplogo" style="position: absolute;" >
+                <NuxtLink to="/" class="logo-white">
+    <img src="/assets/images/gwc-logo.webp" alt="logo" class="rounded" :style="{ minHeight: minheight + 'px' }" />
+</NuxtLink>
             </div>
+
             <!-- MAIN MENU -->
             <nav class="wsmenu clearfix" >
                 <ul class="wsmenu-list nav-theme">
@@ -125,47 +128,45 @@
                     <li class="nl-simple" aria-haspopup="true">
                         <NuxtLink to="/signup-2" class="btn r-04 bg-primary hover--tra-white last-link">POSP Sign up</NuxtLink>
                     
-           
+                       
                     </li>
+
+                    
                 </ul>
             </nav>
            
         </div>
     </div>
 </template>
-<script>
-import { reactive } from 'vue';
-export default {
-    setup() {
-        const state = reactive({
-        isOpen: [false, false]
-        });
-        const toggle = (index) => {
-        state.isOpen[index] = !state.isOpen[index];
-        };
-        return {
-        toggle,
-        isOpen: state.isOpen
-        };
-    },
-    mounted() {
-        window.addEventListener("scroll", this.handleScroll);
-    },
-    destroyed() {
-        window.removeEventListener("scroll", this.handleScroll);
-    },
-    methods: {
-        handleScroll() {
-            const menu = document.getElementById("main-menu");
-            const header = document.getElementById("header");
-            if (window.pageYOffset > 100) {
-                menu.classList.add("scroll");
-                header.classList.add("scroll");
-            } else {
-                menu.classList.remove("scroll");
-                header.classList.remove("scroll");
-            }
-        }
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const isOpen = ref([false, false]);
+
+const toggle = (index) => {
+    isOpen.value[index] = !isOpen.value[index];
+};
+
+const minheight = ref(145);
+const handleScroll = () => {
+    const menu = document.getElementById("main-menu");
+    const header = document.getElementById("header");
+    if (window.pageYOffset > 100) {
+       minheight.value = 60
+        menu.classList.add("scroll");
+        header.classList.add("scroll");
+    } else {
+        minheight.value = 145
+        menu.classList.remove("scroll");
+        header.classList.remove("scroll");
     }
 };
+
+onMounted(() => {
+    window.addEventListener("scroll", handleScroll);
+});
+
+onUnmounted(() => {
+    window.removeEventListener("scroll", handleScroll);
+});
 </script>
