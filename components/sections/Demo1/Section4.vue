@@ -13,6 +13,7 @@
                 </div>
             </div>
             <!-- FEATURES-6 WRAPPER -->
+             <h1>hellow</h1>
             <div class="fbox-wrapper text-center">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
                     <!-- FEATURE BOX #1 -->
