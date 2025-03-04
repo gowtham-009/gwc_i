@@ -111,13 +111,12 @@
                         </div>
                     </div>
 
-                    <!-- END FEATURE BOX #4 -->
                 </div>
-                <!-- End row -->
+             
             </div>
-            <!-- END FEATURES-6 WRAPPER -->
+         
         </div>
-        <!-- End container -->
+     
     </section>
  
 </template>
