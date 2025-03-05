@@ -1,5 +1,5 @@
 <template>
-    <section id="faqs-2" class="gr--whitesmoke pb-30 inner-page-hero faqs-section division">
+    <section id="faqs-2" class="gr--whitesmoke pb-30 inner-page-hero faqs-section division bg-color">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-11 col-xl-10">
@@ -420,3 +420,8 @@
         </div>
     </section>
 </template>
+<style>
+.bg-color{
+    background-color: rgb(152, 152, 152) !important;
+}
+</style>

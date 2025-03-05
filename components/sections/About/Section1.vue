@@ -1,5 +1,5 @@
 <template>
-    <section id="about-2" class="rel inner-page-hero about-section division">
+    <section id="about-2" class="rel inner-page-hero about-section division bg-color">
         <!-- ABOUT-2 TITLE -->
         <div class="container">
             <div class="row">
@@ -67,3 +67,8 @@
         <!-- END ABOUT-2 IMAGES -->
     </section>
 </template>
+<style>
+.bg-color{
+    background-color: rgb(193, 193, 193) !important;
+}
+</style>

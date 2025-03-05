@@ -211,3 +211,9 @@ export default {
     }
 };
 </script>
+
+<style>
+.pricing-section{
+    background-color: black!important;
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-    <section id="contacts-1" class="pb-50 inner-page-hero contacts-section division">
+    <section id="contacts-1" class="pb-50 inner-page-hero contacts-section division bg-color">
         <div class="container">
             <!-- SECTION TITLE -->
             <div class="row justify-content-center">
@@ -67,3 +67,9 @@
     </section>
     <hr class="divider" />
 </template>
+
+<style>
+.bg-color{
+    background-color: rgb(152, 152, 152) !important;
+}
+</style>
