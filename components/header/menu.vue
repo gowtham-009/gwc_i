@@ -22,7 +22,7 @@
                        
                     </li>
                     <!-- SIMPLE NAVIGATION LINK -->
-                    <li class="nl-simple" aria-haspopup="true"><NuxtLink to="/about" class="h-link">About Us</NuxtLink></li>
+                    <li class="nl-simple" aria-haspopup="true"><NuxtLink  class="h-link">About Us</NuxtLink></li>
                     <!-- MEGAMENU -->
                     <li aria-haspopup="true" class="mg_link">
                         <NuxtLink to="/#" class="h-link">Insurance </NuxtLink>
@@ -31,15 +31,15 @@
                     </li>
                     <!-- END MEGAMENU -->
                     <!-- SIMPLE NAVIGATION LINK -->
-                    <li class="nl-simple" aria-haspopup="true"><NuxtLink to="/faqs" class="h-link">FAQs</NuxtLink></li>
+                    <li class="nl-simple" aria-haspopup="true"><NuxtLink  class="h-link">FAQs</NuxtLink></li>
                     <!-- SIMPLE NAVIGATION LINK -->
-                    <li class="nl-simple" aria-haspopup="true"><NuxtLink to="/contacts" class="h-link">Contacts</NuxtLink></li>
-                    <li class="nl-simple" aria-haspopup="true"><NuxtLink to="/login-1" class="h-link">Sign in</NuxtLink></li>
+                    <li class="nl-simple" aria-haspopup="true"><NuxtLink class="h-link">Contacts</NuxtLink></li>
+                    <li class="nl-simple" aria-haspopup="true"><NuxtLink  class="h-link">Sign in</NuxtLink></li>
                     <!-- SIGN IN LINK -->
                     
                     <!-- SIGN UP BUTTON -->
                     <li class="nl-simple" aria-haspopup="true">
-                        <NuxtLink to="/signup-2" class="btn r-04 bg-primary hover--tra-white last-link">POSP Sign up</NuxtLink>
+                        <NuxtLink  class="btn r-04 bg-primary hover--tra-white last-link">POSP Sign up</NuxtLink>
                     
                        
                     </li>
@@ -54,11 +54,9 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 
-const isOpen = ref([false, false]);
 
-const toggle = (index) => {
-    isOpen.value[index] = !isOpen.value[index];
-};
+
+
 
 const minheight = ref(145);
 const handleScroll = () => {

@@ -90,7 +90,7 @@
                             </div>
                             <!-- Form Input -->
                             <div class="col-md-12">
-                                <input type="email" name="email" class="form-control  email" placeholder="Enter Your Email*" autocomplete="off" required />
+                                <input type="text" name="address" class="form-control  address" placeholder="Enter Your address*" autocomplete="off" required />
                             </div>
                             <!-- Form Button -->
                             <div class="col-md-12 form-btn">
