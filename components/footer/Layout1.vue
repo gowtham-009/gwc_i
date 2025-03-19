@@ -23,11 +23,7 @@
                                     <NuxtLink>About Us</NuxtLink>
                                 </p>
                             </li>
-                            <li>
-                                <p>
-                                    <NuxtLink>About Us</NuxtLink>
-                                </p>
-                            </li>
+                          
                             <li>
                                 <p>
                                     <NuxtLink>Customers</NuxtLink>
