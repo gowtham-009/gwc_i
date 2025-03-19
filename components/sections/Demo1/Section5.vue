@@ -15,7 +15,7 @@
             <!-- FEATURES-5 WRAPPER -->
             <div class="fbox-wrapper text-center">
                 <div class="row d-flex align-items-center p-3" >
-                   <img src="~/assets/images/ins.png" alt="" style="">
+                   <img src="~/assets/images/ins.png"  alt="" style="border-radius: 2%;">
                   
                 </div>
                 <!-- End row -->
