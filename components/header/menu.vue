@@ -1,53 +1,75 @@
 <template>
-    <div id="main-menu" class="wsmainfull menu clearfix" >
+    <!-- <div class="w-100 p-2 d-flex justify-content-end" style="border:2px solid red; position:absolute; z-index:5; top:2%;">
+        <div class="card bg-danger w-25 d-flex justify-content-center align-items-center">
+            
+                <div class="w-100 d-flex justify-content-between p-1 ">
+                  <span>{{error}}</span>
+                  <span>close</span>
+                </div>
+              
+          
+        </div>
+    </div> -->
+
+    <div id="main-menu" class="wsmainfull menu clearfix">
         <div class="wsmainwp clearfix" style=" margin-left: 6%;">
             <!-- HEADER BLACK LOGO -->
             <div class="desktoplogo ">
-                <NuxtLink to="/" class="logo-black "><img src="/assets/images/gwc-logo.webp" class="rounded" alt="logo" style="min-height: 60px;" /></NuxtLink>
+                <NuxtLink to="/" class="logo-black "><img src="/assets/images/gwc-logo.webp" class="rounded" alt="logo"
+                        style="min-height: 60px;" /></NuxtLink>
             </div>
-          
-            <div class="desktoplogo" style="position: absolute;" >
+
+            <div class="desktoplogo" style="position: absolute;">
                 <NuxtLink to="/" class="logo-white">
-    <img src="/assets/images/gwc-logo.webp" alt="logo" class="rounded" :style="{ minHeight: minheight + 'px' }" />
-</NuxtLink>
+                    <img src="/assets/images/gwc-logo.webp" alt="logo" class="rounded"
+                        :style="{ minHeight: minheight + 'px' }" />
+                </NuxtLink>
             </div>
 
             <!-- MAIN MENU -->
-            <nav class="wsmenu clearfix" >
+            <nav class="wsmenu clearfix">
                 <ul class="wsmenu-list nav-theme">
                     <!-- DROPDOWN SUB MENU -->
-                    <li aria-haspopup="true" class="mg_link" >
-                       
+                    <li aria-haspopup="true" class="mg_link">
+
                         <NuxtLink to="/" class="h-link">Home </NuxtLink>
-                       
+
                     </li>
                     <!-- SIMPLE NAVIGATION LINK -->
-                    <li class="nl-simple" aria-haspopup="true"><NuxtLink  class="h-link">About Us</NuxtLink></li>
+                    <li class="nl-simple" aria-haspopup="true">
+                        <NuxtLink class="h-link">About Us</NuxtLink>
+                    </li>
                     <!-- MEGAMENU -->
                     <li aria-haspopup="true" class="mg_link">
                         <NuxtLink to="" class="h-link">Insurance </NuxtLink>
-                       
+
                         <!-- End wsmegamenu -->
                     </li>
                     <!-- END MEGAMENU -->
                     <!-- SIMPLE NAVIGATION LINK -->
-                    <li class="nl-simple" aria-haspopup="true"><NuxtLink to=""  class="h-link">FAQs</NuxtLink></li>
+                    <li class="nl-simple" aria-haspopup="true">
+                        <NuxtLink to="" class="h-link">FAQs</NuxtLink>
+                    </li>
                     <!-- SIMPLE NAVIGATION LINK -->
-                    <li class="nl-simple" aria-haspopup="true"><NuxtLink to="" class="h-link">Contacts</NuxtLink></li>
-                    <li class="nl-simple" aria-haspopup="true"><NuxtLink to=""  class="h-link ">Sign in</NuxtLink></li>
+                    <li class="nl-simple" aria-haspopup="true">
+                        <NuxtLink to="" class="h-link">Contacts</NuxtLink>
+                    </li>
+                    <li class="nl-simple" aria-haspopup="true">
+                        <NuxtLink to="" class="h-link ">Sign in</NuxtLink>
+                    </li>
                     <!-- SIGN IN LINK -->
-                    
+
                     <!-- SIGN UP BUTTON -->
                     <li class="nl-simple" aria-haspopup="true">
-                        <NuxtLink  class="btn r-04 bg-primary hover--tra-white last-link">POSP Sign up</NuxtLink>
-                    
-                       
+                        <NuxtLink class="btn r-04 bg-primary hover--tra-white last-link">POSP Sign up</NuxtLink>
+
+
                     </li>
 
-                    
+
                 </ul>
             </nav>
-           
+
         </div>
     </div>
 </template>
@@ -63,7 +85,7 @@ const handleScroll = () => {
     const menu = document.getElementById("main-menu");
     const header = document.getElementById("header");
     if (window.pageYOffset > 100) {
-       minheight.value = 60
+        minheight.value = 60
         menu.classList.add("scroll");
         header.classList.add("scroll");
     } else {

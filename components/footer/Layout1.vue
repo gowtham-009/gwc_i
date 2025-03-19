@@ -1,4 +1,5 @@
 <template>
+
     <footer id="footer-3" class="pt-100 footer ft-3-ntr">
         <div class="container">
             <!-- FOOTER CONTENT -->
@@ -6,7 +7,8 @@
                 <!-- FOOTER LOGO -->
                 <div class="col-xl-3">
                     <div class="footer-info">
-                        <img class="footer-logo rounded" src="/assets/images/gwc-logo.webp" alt="footer-logo"  style="min-height: 90px;"/>
+                        <img class="footer-logo rounded" src="/assets/images/gwc-logo.webp" alt="footer-logo"
+                            style="min-height: 90px;" />
                     </div>
                 </div>
                 <!-- FOOTER LINKS -->
@@ -17,13 +19,19 @@
                         <!-- Links -->
                         <ul class="foo-links clearfix">
                             <li>
-                                <p><NuxtLink >About Us</NuxtLink></p>
+                                <p>
+                                    <NuxtLink>About Us</NuxtLink>
+                                </p>
                             </li>
                             <li>
-                                <p><NuxtLink >About Us</NuxtLink></p>
+                                <p>
+                                    <NuxtLink>About Us</NuxtLink>
+                                </p>
                             </li>
                             <li>
-                                <p><NuxtLink>Customers</NuxtLink></p>
+                                <p>
+                                    <NuxtLink>Customers</NuxtLink>
+                                </p>
                             </li>
                             <li>
                                 <p><a href="#">Community</a></p>
@@ -40,16 +48,24 @@
                         <!-- Links -->
                         <ul class="foo-links clearfix">
                             <li>
-                                <p><NuxtLink >Integration</NuxtLink></p>
+                                <p>
+                                    <NuxtLink>Integration</NuxtLink>
+                                </p>
                             </li>
                             <li>
-                                <p><NuxtLink >What's New</NuxtLink></p>
+                                <p>
+                                    <NuxtLink>What's New</NuxtLink>
+                                </p>
                             </li>
                             <li>
-                                <p><NuxtLink >Pricing</NuxtLink></p>
+                                <p>
+                                    <NuxtLink>Pricing</NuxtLink>
+                                </p>
                             </li>
                             <li>
-                                <p><NuxtLink >Help Center</NuxtLink></p>
+                                <p>
+                                    <NuxtLink>Help Center</NuxtLink>
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -63,16 +79,24 @@
                         <!-- Links -->
                         <ul class="foo-links clearfix">
                             <li>
-                                <p><NuxtLink >Terms of Use</NuxtLink></p>
+                                <p>
+                                    <NuxtLink>Terms of Use</NuxtLink>
+                                </p>
                             </li>
                             <li>
-                                <p><NuxtLink>Privacy Policy</NuxtLink></p>
+                                <p>
+                                    <NuxtLink>Privacy Policy</NuxtLink>
+                                </p>
                             </li>
                             <li>
-                                <p><NuxtLink >Cookie Policy</NuxtLink></p>
+                                <p>
+                                    <NuxtLink>Cookie Policy</NuxtLink>
+                                </p>
                             </li>
                             <li>
-                                <p><NuxtLink>Site Map</NuxtLink></p>
+                                <p>
+                                    <NuxtLink>Site Map</NuxtLink>
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -84,18 +108,27 @@
                         <!-- Title -->
                         <h6 class="s-17 w-700">Follow the Best</h6>
                         <!-- Newsletter Form Input -->
-                        <form class="newsletter-form">
-                            <div class="input-group r-06">
-                                <input type="email" class="form-control" placeholder="Email Address" required id="s-email" />
+                        <form class="newsletter-form" @submit.prevent="emailsend">
+                            <div class="input-group  r-06">
+                                <input type="email" v-model="email" class="form-control" placeholder="Email Address"/>
+
                                 <span class="input-group-btn ico-15">
                                     <button type="submit" class="btn color--theme">
                                         <span class="flaticon-right-arrow-1"></span>
                                     </button>
                                 </span>
+                              
                             </div>
+
+                            <span class="text-danger">{{ error }}</span>
+                            <span class="text-success">{{ success }}</span>
+
                             <!-- Newsletter Form Notification -->
                             <label for="s-email" class="form-notification"></label>
+
+
                         </form>
+
                     </div>
                 </div>
                 <!-- END FOOTER NEWSLETTER FORM -->
@@ -109,7 +142,7 @@
                     <!-- FOOTER COPYRIGHT -->
                     <div class="col">
                         <div class="footer-copyright">
-                            <p class="p-sm">&copy;  <span>All Rights Reserved</span></p>
+                            <p class="p-sm">&copy; <span>All Rights Reserved</span></p>
                         </div>
                     </div>
                     <!-- FOOTER SOCIALS -->
@@ -136,5 +169,60 @@
         </div>
         <!-- End container -->
         <FooterGoToTop />
+
+       
+
+
     </footer>
 </template>
+<script setup>
+import { ref } from 'vue'
+const email = ref('')
+const error = ref(null)
+const success=ref(null)
+const emailsend = async () => {
+
+    const emailid = email.value;
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailPattern.test(emailid)) {
+        error.value = 'Invalid email address.'
+        return;
+    }
+
+
+    error.value=null
+    const apiurl = 'https://insurance.w3webtechnologies.co.in/insurance/post_emails.php'
+    const formdata = new FormData()
+
+    formdata.append('email', emailid)
+
+    try {
+        const response = await fetch(apiurl, {
+            method: 'POST',
+            body: formdata
+        })
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        else {
+            const data = await response.json()
+            if (data.status == 'success') {
+             
+               success.value='Successfully Sent'
+            }
+        }
+    } catch (error) {
+        console.log(error)
+    }
+    finally {
+      setTimeout(() => {
+        success.value=''
+        email.value=''
+      }, 2000);
+    }
+
+
+};
+
+
+</script>
