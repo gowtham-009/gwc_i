@@ -84,11 +84,12 @@
                                      placeholder="Enter Your Email*" autocomplete="off" />
                                    
                             </div>
-                            <span class="text-danger">{{ error1 }}</span>
-                            <span class="text-success">{{ success1 }}</span>
+                           
                             <div class="col-md-12 form-btn mt-2">
                                 <button type="submit" class="btn bg-primary text-white submit mt-1">Get Started Now</button>
                             </div>
+                            <span class="text-danger">{{ error1 }}</span>
+                            <span class="text-success text-center">{{ success1 }}</span>
                            
                         </form>
 
@@ -122,7 +123,8 @@
                                 <button type="submit" class="btn bg-primary text-white submit mt-1">Get Started Now</button>
                             </div>
 
-                         
+                            <span class="text-danger">{{ error2 }}</span>
+                            <span class="text-success text-center">{{ success2 }}</span>
                            
                         </form>
 
@@ -206,7 +208,7 @@ const activetab = (tab) => {
 const formsubmission = (formtype) => {
     if (formtype == 'General POSP') {
         if (!generalname.value || !mobileNumber.value || !email.value) {
-          error1.value="Please all fields filled"
+          error1.value="Please fill all fields."
         }
         else if( mobileNumber.value.length < 9){
             error1.value="Mobile number strictly 10 digits"
@@ -220,7 +222,7 @@ const formsubmission = (formtype) => {
 
     else if (formtype == 'Life POSP') {
         if (!lifename.value ||!mobileNumber_l.value || !email_l.value) {
-             error2.value="Please all fields filled"
+             error2.value="Please fill all fields."
         }
       
         else if (mobileNumber_l.value.length < 9) {
