@@ -85,7 +85,7 @@
                                    
                             </div>
                            
-                            <div class="col-md-12 form-btn mt-2">
+                            <div class="col-md-12 form-btn mt-1">
                                 <button type="submit" class="btn bg-primary text-white submit mt-1">Get Started Now</button>
                             </div>
                             <span class="text-danger">{{ error1 }}</span>
@@ -119,7 +119,7 @@
                             <span class="text-danger">{{ error2 }}</span>
                             <span class="text-success">{{ success2 }}</span>
 
-                            <div class="col-md-12 form-btn mt-2">
+                            <div class="col-md-12 form-btn mt-1">
                                 <button type="submit" class="btn bg-primary text-white submit mt-1">Get Started Now</button>
                             </div>
 
