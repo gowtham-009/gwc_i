@@ -1,27 +1,16 @@
 <template>
-    <!-- <div class="w-100 p-2 d-flex justify-content-end" style="border:2px solid red; position:absolute; z-index:5; top:2%;">
-        <div class="card bg-danger w-25 d-flex justify-content-center align-items-center">
-            
-                <div class="w-100 d-flex justify-content-between p-1 ">
-                  <span>{{error}}</span>
-                  <span>close</span>
-                </div>
-              
-          
-        </div>
-    </div> -->
-
+   
     <div id="main-menu" class="wsmainfull menu clearfix">
         <div class="wsmainwp clearfix" style=" margin-left: 6%;">
             <!-- HEADER BLACK LOGO -->
             <div class="desktoplogo ">
-                <NuxtLink to="/" class="logo-black "><img src="/assets/images/gwc-logo.webp" class="rounded" alt="logo"
+                <NuxtLink to="/" class="logo-black "><img src="https://www.gwcindiainsurance.com/assets/images/logo/logo.png" class="rounded" alt="logo"
                         style="min-height: 60px;" /></NuxtLink>
             </div>
 
             <div class="desktoplogo" style="position: absolute;">
                 <NuxtLink to="/" class="logo-white">
-                    <img src="/assets/images/gwc-logo.webp" alt="logo" class="rounded"
+                    <img src="https://www.gwcindiainsurance.com/assets/images/logo/logo.png" alt="logo" class="rounded"
                         :style="{ minHeight: minheight + 'px' }" />
                 </NuxtLink>
             </div>

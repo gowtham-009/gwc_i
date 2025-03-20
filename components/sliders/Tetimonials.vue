@@ -20,7 +20,7 @@
                     <!-- Text -->
                     <div class="review-txt">
                         <!-- Text -->
-                        <p>Etiam sapien sagittis congue augue a massa varius egestas ultrice varius magna a tempus aliquet undo cursus suscipit</p>
+                        <p>As a channel partner of Goodwill Insurance, I value the seamless experience offered by their web portal and mobile app. It has streamlined the policy buying and renewal process, making it hassle-free for both me and my clients.</p>
                         <!-- Author -->
                         <div class="author-data clearfix">
                             <!-- Avatar -->
@@ -29,8 +29,8 @@
                             </div>
                             <!-- Data -->
                             <div class="review-author">
-                                <h6 class="s-18 w-700">Scott Boxer</h6>
-                                <p class="p-sm">@scott_boxer</p>
+                                <h6 class="s-18 w-700">Jennifer</h6>
+                                <p class="p-sm">Bengaluru</p>
                             </div>
                         </div>
                         <!-- End Author -->
@@ -45,7 +45,7 @@
                     <!-- Text -->
                     <div class="review-txt">
                         <!-- Text -->
-                        <p>Etiam sapien sagittis congue augue a massa varius egestas ultrice varius magna a tempus aliquet undo cursus suscipit</p>
+                        <p>I am pleased to share that since 2021, we have had a smooth and productive partnership with Goodwill, handling PAN, TAN, E-TDS, Aadhaar, and DSC services. Their prompt action and friendly support have ensured seamless operations.</p>
                         <!-- Author -->
                         <div class="author-data clearfix">
                             <!-- Avatar -->
@@ -54,8 +54,8 @@
                             </div>
                             <!-- Data -->
                             <div class="review-author">
-                                <h6 class="s-18 w-700">Joel Peterson</h6>
-                                <p class="p-sm">Internet Surfer</p>
+                                <h6 class="s-18 w-700">Jonathan Barnes</h6>
+                                <p class="p-sm">Delhi</p>
                             </div>
                         </div>
                         <!-- End Author -->
@@ -70,7 +70,7 @@
                     <!-- Text -->
                     <div class="review-txt">
                         <!-- Text -->
-                        <p>Etiam sapien sagittis congue augue a massa varius egestas ultrice varius magna a tempus aliquet undo cursus suscipit</p>
+                        <p>I’m highly impressed by the support and efficiency of Goodwill. Their web portal and mobile app have made it exceptionally easy to serve my clients, leading to higher sales and improved customer satisfaction.</p>
                         <!-- Author -->
                         <div class="author-data clearfix">
                             <!-- Avatar -->
@@ -79,8 +79,8 @@
                             </div>
                             <!-- Data -->
                             <div class="review-author">
-                                <h6 class="s-18 w-700">Marisol19</h6>
-                                <p class="p-sm">@marisol19</p>
+                                <h6 class="s-18 w-700">Harris</h6>
+                                <p class="p-sm">West Bengal</p>
                             </div>
                         </div>
                         <!-- End Author -->
@@ -88,131 +88,7 @@
                     <!-- End Text -->
                 </div>
             </SwiperSlide>
-            <SwiperSlide>
-                <div class="review-1 bg--white-100 block-shadow r-08">
-                    <!-- Quote Icon -->
-                    <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
-                    <!-- Text -->
-                    <div class="review-txt">
-                        <!-- Text -->
-                        <p>Etiam sapien sagittis congue augue a massa varius egestas ultrice varius magna a tempus aliquet undo cursus suscipit</p>
-                        <!-- Author -->
-                        <div class="author-data clearfix">
-                            <!-- Avatar -->
-                            <div class="review-avatar">
-                                <img src="/assets/images/review-author-4.jpg" alt="review-avatar" />
-                            </div>
-                            <!-- Data -->
-                            <div class="review-author">
-                                <h6 class="s-18 w-700">Leslie D.</h6>
-                                <p class="p-sm">Web Developer</p>
-                            </div>
-                        </div>
-                        <!-- End Author -->
-                    </div>
-                    <!-- End Text -->
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div class="review-1 bg--white-100 block-shadow r-08">
-                    <!-- Quote Icon -->
-                    <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
-                    <!-- Text -->
-                    <div class="review-txt">
-                        <!-- Text -->
-                        <p>Etiam sapien sagittis congue augue a massa varius egestas ultrice varius magna a tempus aliquet undo cursus suscipit</p>
-                        <!-- Author -->
-                        <div class="author-data clearfix">
-                            <!-- Avatar -->
-                            <div class="review-avatar">
-                                <img src="/assets/images/review-author-5.jpg" alt="review-avatar" />
-                            </div>
-                            <!-- Data -->
-                            <div class="review-author">
-                                <h6 class="s-18 w-700">Jennifer Harper</h6>
-                                <p class="p-sm">App Developer</p>
-                            </div>
-                        </div>
-                        <!-- End Author -->
-                    </div>
-                    <!-- End Text -->
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div class="review-1 bg--white-100 block-shadow r-08">
-                    <!-- Quote Icon -->
-                    <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
-                    <!-- Text -->
-                    <div class="review-txt">
-                        <!-- Text -->
-                        <p>Etiam sapien sagittis congue augue a massa varius egestas ultrice varius magna a tempus aliquet undo cursus suscipit</p>
-                        <!-- Author -->
-                        <div class="author-data clearfix">
-                            <!-- Avatar -->
-                            <div class="review-avatar">
-                                <img src="/assets/images/review-author-6.jpg" alt="review-avatar" />
-                            </div>
-                            <!-- Data -->
-                            <div class="review-author">
-                                <h6 class="s-18 w-700">Jonathan Barnes</h6>
-                                <p class="p-sm">jQuery Programmer</p>
-                            </div>
-                        </div>
-                        <!-- End Author -->
-                    </div>
-                    <!-- End Text -->
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div class="review-1 bg--white-100 block-shadow r-08">
-                    <!-- Quote Icon -->
-                    <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
-                    <!-- Text -->
-                    <div class="review-txt">
-                        <!-- Text -->
-                        <p>Etiam sapien sagittis congue augue a massa varius egestas ultrice varius magna a tempus aliquet undo cursus suscipit</p>
-                        <!-- Author -->
-                        <div class="author-data clearfix">
-                            <!-- Avatar -->
-                            <div class="review-avatar">
-                                <img src="/assets/images/review-author-7.jpg" alt="review-avatar" />
-                            </div>
-                            <!-- Data -->
-                            <div class="review-author">
-                                <h6 class="s-18 w-700">Mike Harris</h6>
-                                <p class="p-sm">Graphic Designer</p>
-                            </div>
-                        </div>
-                        <!-- End Author -->
-                    </div>
-                    <!-- End Text -->
-                </div>
-            </SwiperSlide>
-            <SwiperSlide>
-                <div class="review-1 bg--white-100 block-shadow r-08">
-                    <!-- Quote Icon -->
-                    <div class="review-ico ico-65"><span class="flaticon-quote"></span></div>
-                    <!-- Text -->
-                    <div class="review-txt">
-                        <!-- Text -->
-                        <p>Etiam sapien sagittis congue augue a massa varius egestas ultrice varius magna a tempus aliquet undo cursus suscipit</p>
-                        <!-- Author -->
-                        <div class="author-data clearfix">
-                            <!-- Avatar -->
-                            <div class="review-avatar">
-                                <img src="/assets/images/review-author-8.jpg" alt="review-avatar" />
-                            </div>
-                            <!-- Data -->
-                            <div class="review-author">
-                                <h6 class="s-18 w-700">Evelyn Martinez</h6>
-                                <p class="p-sm">WordPress Consultant</p>
-                            </div>
-                        </div>
-                        <!-- End Author -->
-                    </div>
-                    <!-- End Text -->
-                </div>
-            </SwiperSlide>
+           
         </Swiper>
     </div>
 </template>

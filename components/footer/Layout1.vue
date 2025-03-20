@@ -7,7 +7,7 @@
                 <!-- FOOTER LOGO -->
                 <div class="col-xl-3">
                     <div class="footer-info">
-                        <img class="footer-logo rounded" src="/assets/images/gwc-logo.webp" alt="footer-logo"
+                        <img class="footer-logo rounded" src="https://www.gwcindiainsurance.com/assets/images/logo/logo.png" alt="footer-logo"
                             style="min-height: 90px;" />
                     </div>
                 </div>
@@ -104,26 +104,7 @@
                         <!-- Title -->
                         <h6 class="s-17 w-700">Follow the Best</h6>
                         <!-- Newsletter Form Input -->
-                        <form class="newsletter-form" @submit.prevent="emailsend">
-                            <div class="input-group  r-06">
-                                <input type="email" v-model="email" class="form-control" placeholder="Email Address"/>
-
-                                <span class="input-group-btn ico-15">
-                                    <button type="submit" class="btn color--theme">
-                                        <span class="flaticon-right-arrow-1"></span>
-                                    </button>
-                                </span>
-                              
-                            </div>
-
-                            <span class="text-danger">{{ error }}</span>
-                            <span class="text-success">{{ success }}</span>
-
-                            <!-- Newsletter Form Notification -->
-                            <label for="s-email" class="form-notification"></label>
-
-
-                        </form>
+                       
 
                     </div>
                 </div>
@@ -172,53 +153,7 @@
     </footer>
 </template>
 <script setup>
-import { ref } from 'vue'
-const email = ref('')
-const error = ref(null)
-const success=ref(null)
-const emailsend = async () => {
 
-    const emailid = email.value;
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!emailPattern.test(emailid)) {
-        error.value = 'Invalid email address.'
-        return;
-    }
-
-
-    error.value=null
-    const apiurl = 'https://insurance.w3webtechnologies.co.in/insurance/post_emails.php'
-    const formdata = new FormData()
-
-    formdata.append('email', emailid)
-
-    try {
-        const response = await fetch(apiurl, {
-            method: 'POST',
-            body: formdata
-        })
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        else {
-            const data = await response.json()
-            if (data.status == 'success') {
-             
-               success.value='Successfully Sent'
-            }
-        }
-    } catch (error) {
-        console.log(error)
-    }
-    finally {
-      setTimeout(() => {
-        success.value=''
-        email.value=''
-      }, 2000);
-    }
-
-
-};
 
 
 </script>

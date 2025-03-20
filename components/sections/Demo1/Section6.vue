@@ -9,7 +9,7 @@
                             <!-- Title -->
                             <h2 class="s-50 w-700">Read what our users have to say about us</h2>
                             <!-- Text -->
-                            <p class="s-21">Ligula risus auctor tempus magna feugiat lacinia.</p>
+                            <p class="s-21">Partner Reviews</p>
                         </div>
                     </div>
                 </div>
