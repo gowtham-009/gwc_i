@@ -61,7 +61,7 @@
 
                     <!-- SIGN UP BUTTON -->
                     <li class="nl-simple" aria-haspopup="true">
-                        <NuxtLink class="btn r-04 bg-primary hover--tra-white last-link">POSP Sign up</NuxtLink>
+                        <NuxtLink class="btn r-04  hover--tra-white last-link" style="background-color:  #0069f8 ;">POSP Sign up</NuxtLink>
 
 
                     </li>
