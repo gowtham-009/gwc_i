@@ -85,15 +85,16 @@
                                    
                             </div>
                            
-                            <div class="col-md-12 form-btn mt-1">
-                                <button type="submit" class="btn bg-primary text-white submit mt-1">Get Started Now</button>
+                            <div class="col-md-12 form-btn mt-2">
+                                <button type="submit" class="btn bg-primary text-white submit ">Get Started Now</button>
                             </div>
-                            <span class="text-danger">{{ error1 }}</span>
+                            
+                            <span class="text-danger fs-6 ">{{ error1 }}</span>
                             <span class="text-success text-center">{{ success1 }}</span>
                            
                         </form>
 
-                        <form v-if="form2" name="requestForm" @submit.prevent="formsubmission('Life POSP')"
+                        <form v-if="form2" name="requestForm" @submi.prevent="formsubmission('Life POSP')"
                             class="row request-form mt-3">
                             <!-- Form Input -->
                             <div class="col-md-12">
