@@ -8,7 +8,7 @@
                 <div class="col-xl-3">
                     <div class="footer-info">
                         <img class="footer-logo rounded" src="https://www.gwcindiainsurance.com/assets/images/logo/logo.png" alt="footer-logo"
-                            style="min-height: 90px;" />
+                            style="min-height: 150px;" />
                     </div>
                 </div>
                 <!-- FOOTER LINKS -->

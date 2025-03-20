@@ -5,7 +5,7 @@
             <!-- HEADER BLACK LOGO -->
             <div class="desktoplogo ">
                 <NuxtLink to="/" class="logo-black "><img src="https://www.gwcindiainsurance.com/assets/images/logo/logo.png" class="rounded" alt="logo"
-                        style="min-height: 60px;" /></NuxtLink>
+                        style="min-height: 80px;" /></NuxtLink>
             </div>
 
             <div class="desktoplogo" style="position: absolute;">
