@@ -6,9 +6,10 @@
                 <div class="col-md-10 col-lg-9">
                     <div class="section-title mb-70">
                         <!-- Title -->
-                        <h2 class="s-50 w-700">Why Partner with Us?</h2>
+                        <h2 class="s-50 w-700">Steps to Become a POSP Agent with Goodwill
+                        </h2>
                         <!-- Text -->
-                        <p class="s-21 color--grey">Ligula risus auctor tempus magna feugiat lacinia.</p>
+                        <p class="s-21 color--grey">Becoming a POSP with Goodwill is simple and rewarding. Follow these steps to begin your journey</p>
                     </div>
                 </div>
             </div>
@@ -33,8 +34,9 @@
                             <!-- End Icon -->
                             <!-- Text -->
                             <div class="fbox-txt">
-                                <h6 class="s-20 w-700">Full-on Support</h6>
-                                <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+                                <h6 class="s-20 w-700">Step 1
+                                </h6>
+                                <p>Register the form above, to connect with us.</p>
                             </div>
                         </div>
                     </div>
@@ -57,8 +59,9 @@
                             <!-- End Icon -->
                             <!-- Text -->
                             <div class="fbox-txt">
-                                <h6 class="s-20 w-700">Paerless Policy</h6>
-                                <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+                                <h6 class="s-20 w-700">Step 2
+                                </h6>
+                                <p>Complete your 7-hour training with us.</p>
                             </div>
                         </div>
                     </div>
@@ -81,8 +84,9 @@
                             <!-- End Icon -->
                             <!-- Text -->
                             <div class="fbox-txt">
-                                <h6 class="s-20 w-700">Instant Policy</h6>
-                                <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+                                <h6 class="s-20 w-700">Step 3
+                                </h6>
+                                <p>Complete the prescribed examination.</p>
                             </div>
                         </div>
                     </div>
@@ -105,8 +109,9 @@
                             <!-- End Icon -->
                             <!-- Text -->
                             <div class="fbox-txt">
-                                <h6 class="s-20 w-700">Quick Commission</h6>
-                                <p>Luctus augue egestas undo ultrice and quisque lacus</p>
+                                <h6 class="s-20 w-700">Step 4
+                                </h6>
+                                <p>Sign the agreement with us, and you’re all set to EARN !</p>
                             </div>
                         </div>
                     </div>
