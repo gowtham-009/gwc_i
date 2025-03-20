@@ -88,13 +88,18 @@
                             <div class="col-md-12 form-btn mt-2">
                                 <button type="submit" class="btn bg-primary text-white submit ">Get Started Now</button>
                             </div>
+
+                            <div class="w-100" style="height: 10px;">
+                                <span class="text-danger fs-6 ">{{ error1 }}</span>
+                                <span class="text-success text-center">{{ success1 }}</span>
+                            </div>
                             
-                            <span class="text-danger fs-6 ">{{ error1 }}</span>
-                            <span class="text-success text-center">{{ success1 }}</span>
+                           
+                          
                            
                         </form>
 
-                        <form v-if="form2" name="requestForm" @submi.prevent="formsubmission('Life POSP')"
+                        <form v-if="form2" name="requestForm" @submit.prevent="formsubmission('Life POSP')"
                             class="row request-form mt-3">
                             <!-- Form Input -->
                             <div class="col-md-12">
@@ -117,15 +122,16 @@
                                      placeholder="Enter Your Email*" autocomplete="off" />
                                    
                             </div>
-                            <span class="text-danger">{{ error2 }}</span>
-                            <span class="text-success">{{ success2 }}</span>
+                           
 
                             <div class="col-md-12 form-btn mt-1">
                                 <button type="submit" class="btn bg-primary text-white submit mt-1">Get Started Now</button>
                             </div>
-
-                            <span class="text-danger">{{ error2 }}</span>
-                            <span class="text-success text-center">{{ success2 }}</span>
+                            <div class="w-100" style="height: 10px;">
+                                <span class="text-danger fs-6">{{ error2 }}</span>
+                                <span class="text-success text-center">{{ success2 }}</span>
+                            </div>
+                           
                            
                         </form>
 
@@ -207,6 +213,7 @@ const activetab = (tab) => {
 
 
 const formsubmission = (formtype) => {
+
     if (formtype == 'General POSP') {
         if (!generalname.value || !mobileNumber.value || !email.value) {
           error1.value="Please fill all fields."
@@ -233,7 +240,7 @@ const formsubmission = (formtype) => {
       
         else {
            error2.value=''
-            lifeposp()
+           lifeposp()
         }
     }
 }
@@ -307,6 +314,7 @@ const generalposp = async () => {
 
 
 const lifeposp = async () => {
+  
     const name = lifename.value;
     const mobileno = mobileNumber_l.value;
     const email = email_l.value;
