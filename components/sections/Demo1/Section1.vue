@@ -344,7 +344,9 @@ const generalposp = async () => {
         generalname.value = ''
         mobileNumber.value = ''
         email.value = ''
-     
+      setTimeout(() => {
+        successpopup.value=false
+      }, 5000);
     }
 
 
@@ -411,7 +413,10 @@ const lifeposp = async () => {
         lifename.value = ''
         mobileNumber_l.value = ''
         email_l.value = ''
-       
+        setTimeout(() => {
+            successpopup2.value = false
+            success2.value = ''
+        }, 5000);
     }
 
 
