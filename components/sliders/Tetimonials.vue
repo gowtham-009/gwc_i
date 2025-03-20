@@ -25,7 +25,7 @@
                         <div class="author-data clearfix">
                             <!-- Avatar -->
                             <div class="review-avatar">
-                                <img src="/assets/images/review-author-1.jpg" alt="review-avatar" />
+                                <img src="/assets/images/review-author-5.jpg" alt="review-avatar" />
                             </div>
                             <!-- Data -->
                             <div class="review-author">
@@ -50,7 +50,7 @@
                         <div class="author-data clearfix">
                             <!-- Avatar -->
                             <div class="review-avatar">
-                                <img src="/assets/images/review-author-2.jpg" alt="review-avatar" />
+                                <img src="/assets/images/review-author-6.jpg" alt="review-avatar" />
                             </div>
                             <!-- Data -->
                             <div class="review-author">
@@ -75,7 +75,7 @@
                         <div class="author-data clearfix">
                             <!-- Avatar -->
                             <div class="review-avatar">
-                                <img src="/assets/images/review-author-3.jpg" alt="review-avatar" />
+                                <img src="/assets/images/review-author-4.jpg" alt="review-avatar" />
                             </div>
                             <!-- Data -->
                             <div class="review-author">

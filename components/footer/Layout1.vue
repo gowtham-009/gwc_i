@@ -7,7 +7,7 @@
                 <!-- FOOTER LOGO -->
                 <div class="col-xl-3">
                     <div class="footer-info">
-                        <img class="footer-logo rounded" src="https://www.gwcindiainsurance.com/assets/images/logo/logo.png" alt="footer-logo"
+                        <img class="footer-logo rounded" src="~/assets/images/goodwill-insurance.png" alt="footer-logo"
                             style="min-height: 150px;" />
                     </div>
                 </div>

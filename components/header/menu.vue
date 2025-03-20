@@ -4,13 +4,13 @@
         <div class="wsmainwp clearfix" style=" margin-left: 6%;">
             <!-- HEADER BLACK LOGO -->
             <div class="desktoplogo ">
-                <NuxtLink to="/" class="logo-black "><img src="https://www.gwcindiainsurance.com/assets/images/logo/logo.png" class="rounded" alt="logo"
+                <NuxtLink to="/" class="logo-black " ><img src="~/assets/images/goodwill-insurance.png" class="rounded" alt="logo"
                         style="min-height: 80px;" /></NuxtLink>
             </div>
 
             <div class="desktoplogo" style="position: absolute;">
-                <NuxtLink to="/" class="logo-white">
-                    <img src="https://www.gwcindiainsurance.com/assets/images/logo/logo.png" alt="logo" class="rounded"
+                <NuxtLink to="/" class="logo-white bg-white rounded" >
+                    <img src="~/assets/images/goodwill-insurance.png" alt="logo" class="rounded"
                         :style="{ minHeight: minheight + 'px' }" />
                 </NuxtLink>
             </div>
