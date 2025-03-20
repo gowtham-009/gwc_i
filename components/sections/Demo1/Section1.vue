@@ -62,41 +62,56 @@
                         <!-- Form -->
 
 
-                        <form v-if="form1"  name="requestForm" @submit.prevent="formsubmission('General POSP')"
+                        <form v-if="form1" name="requestForm" @submit.prevent="formsubmission('General POSP')"
                             class="row request-form mt-3">
                             <!-- Form Input -->
                             <div class="col-md-12">
                                 <input type="text" name="name" class="form-control" v-model="generalname"
                                     @input="convertAndFilter" autocomplete="off" placeholder="Enter Your Name*" />
-                             
+
                             </div>
 
                             <div class="col-md-12">
                                 <input type="text" name="mobile" class="form-control " v-model="mobileNumber"
                                     @input="validateMobile" placeholder="Enter Your Mobile Number*"
                                     autocomplete="off" />
-                              
+
 
                             </div>
                             <!-- Form Input -->
                             <div class="col-md-12">
                                 <input type="email" name="email" class="form-control mb-2" v-model="email"
-                                     placeholder="Enter Your Email*" autocomplete="off" />
-                                   
+                                    placeholder="Enter Your Email*" autocomplete="off" />
+
                             </div>
-                           
+
                             <div class="col-md-12 form-btn mt-2">
                                 <button type="submit" class="btn bg-primary text-white submit ">Get Started Now</button>
                             </div>
 
-                            <div class="w-100" style="height: 10px;">
-                                <span class="text-danger fs-6 ">{{ error1 }}</span>
-                                <span class="text-success text-center">{{ success1 }}</span>
+                            <div class="w-100 mt-1" style=" height: 30px;">
+                                <div class="alert alert-danger d-flex align-items-center p-1"  v-if="errorpopup" role="alert">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <div class="p-1 " style="line-height: 18px; font-size: 15px;">
+                                      {{ error1 }}
+                                    </div>
+                                </div>
+
+
+                                <div class="alert alert-success d-flex align-items-center p-1"  v-if="successpopup" role="alert">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <div class="p-1 " style="line-height: 18px; font-size: 15px;">
+                                      {{ success1 }}
+                                    </div>
+                                </div>
                             </div>
-                            
-                           
-                          
-                           
+
+
+
+
+
+
+
                         </form>
 
                         <form v-if="form2" name="requestForm" @submit.prevent="formsubmission('Life POSP')"
@@ -104,35 +119,49 @@
                             <!-- Form Input -->
                             <div class="col-md-12">
                                 <input type="text" name="name" v-model="lifename" @input="convertAndFilter_l"
-                                    class="form-control name" placeholder="Enter Your Name*" autocomplete="off"
-                                     />
-                                   
-                                     
+                                    class="form-control name" placeholder="Enter Your Name*" autocomplete="off" />
+
+
 
                             </div>
                             <div class="col-md-12">
                                 <input type="text" name="name" class="form-control " v-model="mobileNumber_l"
-                                    @input="validateMobile_l" placeholder="Enter Your Mobile Number*" autocomplete="off"
-                                     />
-                                    
+                                    @input="validateMobile_l" placeholder="Enter Your Mobile Number*"
+                                    autocomplete="off" />
+
                             </div>
                             <!-- Form Input -->
                             <div class="col-md-12">
                                 <input type="email" name="email" class="form-control mb-2" v-model="email_l"
-                                     placeholder="Enter Your Email*" autocomplete="off" />
-                                   
+                                    placeholder="Enter Your Email*" autocomplete="off" />
+
                             </div>
-                           
+
 
                             <div class="col-md-12 form-btn mt-1">
-                                <button type="submit" class="btn bg-primary text-white submit mt-1">Get Started Now</button>
+                                <button type="submit" class="btn bg-primary text-white submit mt-1">Get Started
+                                    Now</button>
                             </div>
-                            <div class="w-100" style="height: 10px;">
-                                <span class="text-danger fs-6">{{ error2 }}</span>
-                                <span class="text-success text-center">{{ success2 }}</span>
+                            <div class="w-100 mt-1" style=" height: 30px;">
+                                <div class="alert alert-danger d-flex align-items-center p-1"  v-if="errorpopup2" role="alert">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                    <div class="p-1 " style="line-height: 18px; font-size: 15px;">
+                                      {{ error2 }}
+                                    </div>
+                                </div>
+
+
+                                <div class="alert alert-success d-flex align-items-center p-1"  v-if="successpopup2" role="alert">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <div class="p-1 " style="line-height: 18px; font-size: 15px;">
+                                      {{ success2 }}
+                                    </div>
+                                </div>
                             </div>
-                           
-                           
+
+
+
+
                         </form>
 
                     </div>
@@ -167,7 +196,7 @@ const {
     mobileNumber,
     validateMobile,
     email,
-  
+
 } = useFormValidation();
 
 
@@ -176,20 +205,20 @@ const {
     convertAndFilter_l,
     mobileNumber_l,
     validateMobile_l,
-    
+
 } = useFormValidation_life();
 
 
-const error1=ref('')
-const success1=ref('')
+const error1 = ref('')
+const success1 = ref('')
 
-const error2=ref('')
-const success2=ref('')
+const error2 = ref('')
+const success2 = ref('')
 
 const form1 = ref(true)
 const form2 = ref(false)
 
-const email_l=ref('')
+const email_l = ref('')
 
 const activelement = ref('general')
 
@@ -211,36 +240,46 @@ const activetab = (tab) => {
 }
 
 
+const errorpopup = ref(false)
+const successpopup=ref(false)
 
+const errorpopup2 = ref(false)
+const successpopup2=ref(false)
 const formsubmission = (formtype) => {
 
     if (formtype == 'General POSP') {
         if (!generalname.value || !mobileNumber.value || !email.value) {
-          error1.value="Please fill all fields."
+            errorpopup.value = true
+            error1.value = "Sorry ! Please fill in all the fields to help us contact you easily."
         }
-        else if( mobileNumber.value.length < 9){
-            error1.value="Mobile number strictly 10 digits"
+        else if (mobileNumber.value.length < 9) {
+            errorpopup.value = true
+            error1.value = "Mobile number strictly 10 digits"
         }
         else {
-            error1.value=''
+            errorpopup.value = false
+            error1.value = ''
             generalposp()
-         
+
         }
     }
 
     else if (formtype == 'Life POSP') {
-        if (!lifename.value ||!mobileNumber_l.value || !email_l.value) {
-             error2.value="Please fill all fields."
+        if (!lifename.value || !mobileNumber_l.value || !email_l.value) {
+            errorpopup2.value = true
+            error2.value = "Sorry ! Please fill in all the fields to help us contact you easily."
         }
-      
+
         else if (mobileNumber_l.value.length < 9) {
-         error2.value="Mobile number strictly 10 digits"
+            errorpopup2.value = true
+            error2.value = "Mobile number strictly 10 digits"
 
         }
-      
+
         else {
-           error2.value=''
-           lifeposp()
+            errorpopup2.value = false
+            error2.value = ''
+            lifeposp()
         }
     }
 }
@@ -253,129 +292,134 @@ const generalposp = async () => {
     const mobileno = mobileNumber.value;
     const emailid = email.value;
 
-  
+
     const namePattern = /^[A-Z][a-zA-Z\s]*$/;
     if (!namePattern.test(name)) {
-        
-        error1.value='Invalid name'
+        errorpopup.value = true
+        error1.value = 'Invalid name'
         return;
     }
 
- 
+
     const mobilePattern = /^\d{10}$/;
     if (!mobilePattern.test(mobileno)) {
-        
-        error1.value='Invalid mobile number'
-      
+        errorpopup.value = true
+        error1.value = 'Invalid mobile number'
+
         return;
     }
 
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailPattern.test(emailid)) {
-        error1.value='Invalid email address.'
+        errorpopup.value = true
+        error1.value = 'Invalid email address.'
         return;
     }
-  
-   const apiurl='https://insurance.w3webtechnologies.co.in/insurance/post_general_posp.php'
-   const formdata=new FormData()
-   formdata.append('type', 'General POSP')
-   formdata.append('name', name)
-   formdata.append('mobileNo', mobileno)
-   formdata.append('email', emailid)
-   try {
-    const response=await fetch(apiurl,{
-        method:'POST',
-        body:formdata
-    })
-    if(!response.ok){
-        throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    else{
-        const data=await response.json()
-        if(data.status=='success'){
-         success1.value='Thank you.'
-        }
-    }
-   } catch (error) {
-    console.log(error)
-   }
-   finally{
-    generalname.value=''
-    mobileNumber.value=''
-    email.value=''
-    setTimeout(() => {
-        success1.value=''
-    }, 2000);
-   }
 
-   
+    const apiurl = 'https://insurance.w3webtechnologies.co.in/insurance/post_general_posp.php'
+    const formdata = new FormData()
+    formdata.append('type', 'General POSP')
+    formdata.append('name', name)
+    formdata.append('mobileNo', mobileno)
+    formdata.append('email', emailid)
+    try {
+        const response = await fetch(apiurl, {
+            method: 'POST',
+            body: formdata
+        })
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        else {
+            const data = await response.json()
+            if (data.status == 'success') {
+                successpopup.value=true
+                success1.value = 'Thank you! Our POSP team will get in touch with you shortly.'
+            }
+        }
+    } catch (error) {
+        console.log(error)
+    }
+    finally {
+        generalname.value = ''
+        mobileNumber.value = ''
+        email.value = ''
+      setTimeout(() => {
+        successpopup.value=false
+      }, 5000);
+    }
+
+
 };
 
 
 
 const lifeposp = async () => {
-  
+
     const name = lifename.value;
     const mobileno = mobileNumber_l.value;
     const email = email_l.value;
 
-  
+
     const namePattern = /^[A-Z][a-zA-Z\s]*$/;
     if (!namePattern.test(name)) {
-       
-        lnameerror.value='Invalid name: Must All capital letter and contain only alphabets and spaces.'
+        errorpopup2.value = true
+        error2.value = 'Invalid name'
         return;
     }
 
- 
+
     const mobilePattern = /^\d{10}$/;
     if (!mobilePattern.test(mobileno)) {
-       
-        lmobileerror.value='Invalid mobile number: Must be exactly 10 digits.'
-      
+        errorpopup2.value = true
+        error2.value = 'Invalid mobile number'
+
         return;
     }
 
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailPattern.test(email)) {
-        emailerror.value='Invalid email address.'
+        errorpopup2.value = true
+        error2.value = 'Invalid email address.'
         return;
     }
 
-   const apiurl='https://insurance.w3webtechnologies.co.in/insurance/post_life_posp.php'
-   const formdata=new FormData()
-   formdata.append('type', 'Life POSP')
-   formdata.append('name', name)
-   formdata.append('mobileNo', mobileno)
-   formdata.append('address', email)
+    const apiurl = 'https://insurance.w3webtechnologies.co.in/insurance/post_life_posp.php'
+    const formdata = new FormData()
+    formdata.append('type', 'Life POSP')
+    formdata.append('name', name)
+    formdata.append('mobileNo', mobileno)
+    formdata.append('address', email)
 
-   try {
-    const response=await fetch(apiurl,{
-        method:'POST',
-        body:formdata
-    })
-    if(!response.ok){
-        throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    else{
-        const data=await response.json()
-        if(data.status=='success'){
-  success2.value='Thank you.'
+    try {
+        const response = await fetch(apiurl, {
+            method: 'POST',
+            body: formdata
+        })
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
         }
+        else {
+            const data = await response.json()
+            if (data.status == 'success') {
+                successpopup2.value = true
+                success2.value = 'Thank you! Our POSP team will get in touch with you shortly.'
+            }
+        }
+    } catch (error) {
+        console.log(error)
     }
-   } catch (error) {
-    console.log(error)
-   }
-   finally{
-    lifename.value=''
-    mobileNumber_l.value=''
-    email_l.value=''
-    setTimeout(() => {
-        success2.value=''
-    }, 2000);
-   }
+    finally {
+        lifename.value = ''
+        mobileNumber_l.value = ''
+        email_l.value = ''
+        setTimeout(() => {
+            successpopup2.value = false
+            success2.value = ''
+        }, 5000);
+    }
 
-   
+
 };
 </script>
 
@@ -393,6 +437,4 @@ const lifeposp = async () => {
 .bg-primcolor {
     background-color: #505c77 !important;
 }
-
-
 </style>
