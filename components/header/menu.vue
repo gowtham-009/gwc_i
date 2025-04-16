@@ -26,26 +26,23 @@
                     </li>
                     <!-- SIMPLE NAVIGATION LINK -->
                     <li class="nl-simple" aria-haspopup="true">
-                        <NuxtLink class="h-link">About Us</NuxtLink>
+                        <NuxtLink to="https://www.gwcindiainsurance.com/about.html" class="h-link">About Us</NuxtLink>
                     </li>
                     <!-- MEGAMENU -->
                     <li aria-haspopup="true" class="mg_link">
-                        <NuxtLink to="" class="h-link">Insurance </NuxtLink>
+                        <NuxtLink to="https://www.gwcindiainsurance.com/life-insurance.html" class="h-link">Insurance </NuxtLink>
 
                         <!-- End wsmegamenu -->
                     </li>
                     <!-- END MEGAMENU -->
                     <!-- SIMPLE NAVIGATION LINK -->
-                    <li class="nl-simple" aria-haspopup="true">
-                        <NuxtLink to="" class="h-link">FAQs</NuxtLink>
-                    </li>
+                  
                     <!-- SIMPLE NAVIGATION LINK -->
                     <li class="nl-simple" aria-haspopup="true">
-                        <NuxtLink to="" class="h-link">Contacts</NuxtLink>
+                        <NuxtLink to="https://www.gwcindiainsurance.com/contact.html" class="h-link">Contacts</NuxtLink>
                     </li>
-                    <li class="nl-simple" aria-haspopup="true">
-                        <NuxtLink to="" class="h-link ">Sign in</NuxtLink>
-                    </li>
+                 
+                   
                     <!-- SIGN IN LINK -->
 
                     <!-- SIGN UP BUTTON -->
